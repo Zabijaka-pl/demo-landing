@@ -18,3 +18,11 @@ collections:
       - { label: "Szablon", name: "template", widget: "select", options: ["duży"] }
       - { label: "Obraz główny", name: "hero_image", widget: "image", required: false }
       - { label: "Treść strony", name: "body", widget: "markdown" }
+  - name: "instrukcja"
+    label: "Instrukcja"
+    files:
+      - label: "Jak korzystać z panelu"
+        name: "jak-korzystac"
+        file: "content/instrukcja.md"
+        fields:
+          - { label: "Instrukcja", name: "body", widget: "markdown" }
