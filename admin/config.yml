@@ -1,3 +1,21 @@
 backend:
   name: git-gateway
   branch: main
+
+media_folder: "static/assets/images"
+public_folder: "/assets/images"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "demopublickey"  # можна залишити демо-ключ
+
+collections:
+  - name: "landing_pages"
+    label: "Landing Pages"
+    folder: "content/landing-pages"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Template", name: "template", widget: "hidden" }
+      - { label: "Body", name: "body", widget: "markdown" }
