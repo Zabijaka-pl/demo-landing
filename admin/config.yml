@@ -14,21 +14,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nazwa", name: "title", widget: "string" }
-      - { label: "Typ szablonu", name: "template_type", widget: "select", options: ["duży", "średni", "mały"] }
-      - { label: "Nagłówek", name: "heading", widget: "string" }
-      - { label: "Tekst", name: "body", widget: "markdown" }
-      - { label: "Obraz", name: "image", widget: "image" }
-      - label: "Timer"
-        name: "timer"
-        widget: "object"
-        fields:
-          - { label: "Pokaż timer", name: "show", widget: "boolean", default: false }
-          - { label: "Data zakończenia", name: "end_date", widget: "datetime" }
-      - label: "Pop-up"
-        name: "popup"
-        widget: "object"
-        fields:
-          - { label: "Pokaż pop-up", name: "show", widget: "boolean", default: false }
-          - { label: "Tytuł pop-up", name: "title", widget: "string" }
-          - { label: "Tekst pop-up", name: "text", widget: "text" }
+      - { label: "Nazwa strony", name: "title", widget: "string" }
+      - { label: "Szablon", name: "template", widget: "select", options: ["duży", "średni", "mały"] }
+      - { label: "Treść strony", name: "body", widget: "markdown" }
