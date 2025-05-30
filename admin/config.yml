@@ -6,11 +6,39 @@ media_folder: "static/images"
 public_folder: "/images"
 
 collections:
+  - name: "templates"
+    label: "Шаблони (НЕ ВИДАЛЯТИ!)"
+    folder: "templates"
+    create: false
+    delete: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Назва шаблону", name: "title", widget: "string" }
+      - { label: "Тип шаблону", name: "template_type", widget: "select", options: ["large", "medium", "small"] }
+      - { label: "Опис", name: "description", widget: "text" }
+      - { label: "HTML код", name: "body", widget: "code", default_language: "html", output_code_only: true }
+
   - name: "pages"
-    label: "Pages"
+    label: "Сторінки"
     folder: "content/pages"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body",  name: "body",  widget: "markdown" }
+      - { label: "Назва", name: "title", widget: "string" }
+      - { label: "Шаблон", name: "template", widget: "select", options: ["large", "medium", "small"] }
+      - { label: "Заголовок", name: "heading", widget: "string" }
+      - { label: "Текст", name: "body", widget: "markdown" }
+      - { label: "Зображення", name: "image", widget: "image" }
+      - label: "Таймер"
+        name: "timer"
+        widget: "object"
+        fields:
+          - { label: "Показати таймер", name: "show", widget: "boolean", default: false }
+          - { label: "Дата закінчення", name: "end_date", widget: "datetime" }
+      - label: "Попап"
+        name: "popup"
+        widget: "object"
+        fields:
+          - { label: "Показати попап", name: "show", widget: "boolean", default: false }
+          - { label: "Заголовок попапу", name: "title", widget: "string" }
+          - { label: "Текст попапу", name: "text", widget: "text" }
