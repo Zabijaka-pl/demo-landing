@@ -15,6 +15,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Nazwa strony", name: "title", widget: "string" }
+      - { label: "Adres strony (slug)", name: "slug", widget: "string", required: false, hint: "To będzie końcówka adresu URL, np. nowa-akcja" }
       - { label: "Szablon", name: "template", widget: "select", options: ["duży"] }
       - { label: "Obraz główny", name: "hero_image", widget: "image", required: false }
       - { label: "Treść strony", name: "body", widget: "markdown" }
