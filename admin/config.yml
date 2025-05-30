@@ -1,25 +1,16 @@
 backend:
-  name: github
-  repo: "Zabijaka-pl/demo-landing"   # твій GitHub-репо
-  branch: main                       # або інша гілка, якщо потрібно
+  name: git-gateway
+  branch: main
 
-media_folder: "static/assets/images"  # куди завантажувати медіа в репо
-public_folder: "/assets/images"       # як це діставати у фронті
-
-media_library:
-  name: uploadcare                    # як приклад — можна й інший адаптер
-  config:
-    publicKey: "demopublickey"        # заміни на свій ключ, або скромно:
-                                       # name: local
-                                       # config: {}
+media_folder: "static/images/uploads"     # де на диску зберігати завантажені зображення
+public_folder: "/images/uploads"          # як до них звертатись з фронту
 
 collections:
-  - name: "landing_pages"
-    label: "Landing Pages"
-    folder: "content/landing-pages"
-    create: false
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Template", name: "template", widget: "hidden" }
-      - { label: "Title",    name: "title",    widget: "string" }
-      - { label: "Body",     name: "body",     widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
