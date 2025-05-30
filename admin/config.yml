@@ -20,7 +20,7 @@ collections:
 
   - name: "pages"
     label: "Сторінки"
-    folder: "content/pages"
+    folder: "content/landing-pages"
     create: true
     slug: "{{slug}}"
     fields:
