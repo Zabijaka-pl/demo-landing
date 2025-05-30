@@ -2,15 +2,15 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "static/images"    # куди фізично зберігаються файли
-public_folder: "/images"         # як до них звертається фронтенд
+media_folder: "static/images"
+public_folder: "/images"
 
 collections:
-  - name: "pages"                # унікальний ідентифікатор колекції
-    label: "Pages"               # назва в UI
-    folder: "content/pages"      # де зберігаються markdown-файли
-    create: true                 # чи можна створювати нові записи
-    slug: "{{slug}}"             # шаблон імені файлу/URL
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body",  name: "body",  widget: "markdown" }
