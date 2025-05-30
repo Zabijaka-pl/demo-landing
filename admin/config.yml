@@ -5,21 +5,30 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 
+locale: "pl"
+
 collections:
   - name: "pages"
-    label: "Сторінки"
+    label: "Strony"
     folder: "content/landing-pages"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Назва", name: "title", widget: "string" }
-      - { label: "Тип шаблону", name: "template_type", widget: "select", options: ["large", "medium", "small"] }
-      - { label: "Заголовок", name: "heading", widget: "string" }
-      - { label: "Текст", name: "body", widget: "markdown" }
-      - { label: "Зображення", name: "image", widget: "image" }
-      - label: "Таймер"
+      - { label: "Nazwa", name: "title", widget: "string" }
+      - { label: "Typ szablonu", name: "template_type", widget: "select", options: ["duży", "średni", "mały"] }
+      - { label: "Nagłówek", name: "heading", widget: "string" }
+      - { label: "Tekst", name: "body", widget: "markdown" }
+      - { label: "Obraz", name: "image", widget: "image" }
+      - label: "Timer"
         name: "timer"
         widget: "object"
         fields:
-          - { label: "Показати таймер", name: "show", widget: "boolean", default: false }
-          - { label: "Дата закінчення", name: "end_date", widget: "datetime" }
+          - { label: "Pokaż timer", name: "show", widget: "boolean", default: false }
+          - { label: "Data zakończenia", name: "end_date", widget: "datetime" }
+      - label: "Pop-up"
+        name: "popup"
+        widget: "object"
+        fields:
+          - { label: "Pokaż pop-up", name: "show", widget: "boolean", default: false }
+          - { label: "Tytuł pop-up", name: "title", widget: "string" }
+          - { label: "Tekst pop-up", name: "text", widget: "text" }
