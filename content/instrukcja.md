@@ -15,8 +15,16 @@ body: |
   - Każda strona ma swój adres (URL) w internecie.
   - Adres wygląda tak:  
     `https://dulcet-bunny-1ccf27.netlify.app/landing-pages/nazwa-strony/`
-  - **nazwa-strony** to wartość pola "Adres strony (slug)" lub tytuł strony zapisany małymi literami, bez polskich znaków i spacji (np. “nowa-akcja”).
+  - **nazwa-strony** to:
+      - wartość pola "Adres strony (slug)" (jeśli zostało wypełnione)
+      - lub, jeśli pole jest puste, tytuł strony zapisany małymi literami, bez polskich znaków i spacji (np. “Nowa Promocja 2024” → “nowa-promocja-2024”)
   - Po opublikowaniu możesz skopiować ten adres i otworzyć stronę w nowej karcie.
+
+  #### Przykład:
+  - Tytuł strony: **Nowa Promocja 2024**
+  - Pole slug: *(puste)*
+  - Adres strony:  
+    `https://dulcet-bunny-1ccf27.netlify.app/landing-pages/nowa-promocja-2024/`
 
   **Uwaga:** Po zapisaniu lub opublikowaniu pojawi się krótki komunikat na górze ekranu.
 ---
