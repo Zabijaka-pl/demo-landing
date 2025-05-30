@@ -1,0 +1,4 @@
+﻿# Redirect Netlify Identity API
+/.netlify/identity/*  /.netlify/functions/identity/:splat  200
+# Redirect CMS admin UI
+/admin/*               /admin/index.html                  200
