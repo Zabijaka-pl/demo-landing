@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: "Zabijaka-pl/demo-landing"   # ваш GitHub-репо у форматі <org>/<repo>
-  branch: main                       # або інша гілка, де зберігаються файли
+  name: git-gateway
+  branch: main
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
