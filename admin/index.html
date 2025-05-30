@@ -10,5 +10,19 @@
   </head>
   <body>
     <div id="nc-root"></div>
+
+    <!-- Ініціалізуємо Identity -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.reload();
+            });
+          }
+        });
+        window.netlifyIdentity.init();
+      }
+    </script>
   </body>
 </html>
