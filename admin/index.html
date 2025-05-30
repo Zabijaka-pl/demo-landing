@@ -1,39 +1,39 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Content Manager</title>
-
-    <!-- Примусова ручна ініціалізація CMS -->
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
-
-    <!-- Netlify Identity Widget -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-    <!-- Netlify CMS Core -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <!-- Підтягуємо стилі Netlify CMS -->
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.css" />
   </head>
   <body>
-    <!-- Кореневий контейнер для CMS -->
+    <!-- Контейнер для CMS -->
+    <script>window.CMS_MANUAL_INIT = true;</script>
     <div id="nc-root"></div>
-
+    <!-- Скрипти Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
-      // Ініціалізуємо Identity
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', user => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.reload();
-            });
-          }
-        });
-        window.netlifyIdentity.init();
-      }
-      // Після ініціалізації Identity – запускаємо CMS
       CMS.init({
-        config: '/admin/config.yml'
+        config: {
+          backend: {
+            name: 'git-gateway',
+            branch: 'main'
+          },
+          media_folder: 'static/images',
+          public_folder: '/images',
+          collections: [
+            {
+              name: 'pages',
+              label: 'Pages',
+              folder: 'content/pages',
+              create: true,
+              fields: [
+                { label: 'Title', name: 'title', widget: 'string' },
+                { label: 'Body', name: 'body', widget: 'markdown' }
+              ]
+            }
+          ]
+        }
       });
     </script>
   </body>
