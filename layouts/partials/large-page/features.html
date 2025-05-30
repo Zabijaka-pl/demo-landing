@@ -1,0 +1,19 @@
+<section class="social-proof">
+  <div class="container">
+    <h2>Co mówią klienci</h2>
+    <div class="testimonials-grid">
+      {{ range .Params.testimonials }}
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          <img src="/assets/images/avatar-placeholder.png" alt="Klient">
+        </div>
+        <div class="testimonial-content">
+          <h4>Imię</h4>
+          <p class="testimonial-role">Rola / Firma</p>
+          <p class="testimonial-text">"{{ . }}"</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

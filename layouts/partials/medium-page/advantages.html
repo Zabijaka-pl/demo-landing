@@ -1,0 +1,10 @@
+<section class="advantages">
+  <div class="container">
+    <h2>{{ .Params.advantages_title }}</h2>
+    <ul>
+      {{ range .Params.advantages }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</section>

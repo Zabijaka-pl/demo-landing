@@ -1,0 +1,15 @@
+<section class="usp-section">
+  <div class="container">
+    <div class="usp-grid">
+      {{ range .Params.features }}
+      <div class="usp-card">
+        <div class="usp-icon">
+          <img src="/assets/images/placeholder.png" alt="Ikona">
+        </div>
+        <h3>{{ . }}</h3>
+        <p>Opis funkcji</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
