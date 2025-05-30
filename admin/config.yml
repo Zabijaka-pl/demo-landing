@@ -1,20 +1,3 @@
 backend:
-  name: github
-  repo: "Zabijaka-pl/demo-landing"
+  name: git-gateway
   branch: main
-  app_id: Ov23lipzfb2fiU4NRSD0   # <-- встав сюди свій OAuth App Client ID
-
-
-media_folder: "assets/images"
-public_folder: "/assets/images"
-
-collections:
-  - name: "landing-pages"
-    label: "Landing Pages"
-    folder: "content/landing-pages"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Template", name: "template", widget: "hidden" }
-      - { label: "Body", name: "body", widget: "markdown" }
