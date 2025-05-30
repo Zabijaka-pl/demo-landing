@@ -1,14 +1,14 @@
 ---
 body: |
-  ## Jak korzystać z panelu edycji stron
+  ## Jak skopiować istniejącą stronę (DUPLIKAT)
 
-  1. Aby utworzyć nową stronę, kliknij **"Nowy Strony"**.
-  2. Wypełnij pola: tytuł, wybierz szablon, dodaj obraz i treść.
-  3. Kliknij **"Opublikuj"** – po kilku minutach strona pojawi się na stronie głównej.
-  4. Każda nowa strona ma unikalny adres URL.
-  5. Zmiany są widoczne po odświeżeniu strony.
-  6. Jeśli chcesz skopiować istniejącą stronę – otwórz ją, skopiuj treść i utwórz nową stronę z tymi danyми.
-  7. W razie pytań – skontaktuj się z administratorem.
+  1. Otwórz stronę, którą chcesz skopiować (kliknij na jej nazwę na liście).
+  2. Kliknij **"Edytuj"**.
+  3. Zaznacz i skopiuj całą treść pól (Ctrl+A, potem Ctrl+C).
+  4. Kliknij **"Nowy Strony"**.
+  5. Wklej skopiowaną treść do odpowiednich pól (Ctrl+V).
+  6. Zmień tytuł, datę, numer telefonu lub inne dane według potrzeb.
+  7. Kliknij **"Opublikuj"** – nowa strona pojawi się z unikalnym adresem URL.
 
-  **Uwaga:** Po zapisaniu lub opublikowaniu pojawi się krótki komunikat na górze ekranu.
+  **Uwaga:** W ten sposób możesz szybko tworzyć nowe strony na podstawie istniejących szablonów!
 ---
