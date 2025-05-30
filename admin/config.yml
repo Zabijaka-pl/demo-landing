@@ -1,4 +1,25 @@
 backend:
   name: github
-  repo: "Zabijaka-pl/demo-landing"
-  branch: main        # або інша твоя гілка
+  repo: "Zabijaka-pl/demo-landing"   # твій GitHub-репо
+  branch: main                       # або інша гілка, якщо потрібно
+
+media_folder: "static/assets/images"  # куди завантажувати медіа в репо
+public_folder: "/assets/images"       # як це діставати у фронті
+
+media_library:
+  name: uploadcare                    # як приклад — можна й інший адаптер
+  config:
+    publicKey: "demopublickey"        # заміни на свій ключ, або скромно:
+                                       # name: local
+                                       # config: {}
+
+collections:
+  - name: "landing_pages"
+    label: "Landing Pages"
+    folder: "content/landing-pages"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Template", name: "template", widget: "hidden" }
+      - { label: "Title",    name: "title",    widget: "string" }
+      - { label: "Body",     name: "body",     widget: "markdown" }
