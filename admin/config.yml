@@ -47,3 +47,14 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+
+  - name: links
+    label: Список посилань
+    files:
+      - file: "public/links.html"
+        label: links.html
+        name: links
+        fields:
+          - label: "HTML вміст"
+            name: body
+            widget: "text"
