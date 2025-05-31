@@ -5,25 +5,45 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 
-locale: "pl"
-
 collections:
-  - name: "pages"
-    label: "Strony"
-    folder: "content/landing-pages"
+  - name: landing-pages
+    label: Landing Pages
+    folder: content/landing-pages
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nazwa strony", name: "title", widget: "string" }
-      - { label: "Adres strony (slug)", name: "slug", widget: "string", required: false, hint: "To będzie końcówka adresu URL, np. nowa-akcja" }
-      - { label: "Szablon", name: "template", widget: "select", options: ["duży"] }
-      - { label: "Obraz główny", name: "hero_image", widget: "image", required: false }
-      - { label: "Treść strony", name: "body", widget: "markdown" }
-  - name: "instrukcja"
-    label: "Instrukcja"
-    files:
-      - label: "Jak korzystać z panelu"
-        name: "jak-korzystac"
-        file: "content/instrukcja.md"
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Template", name: "template", widget: "select", options: ["large-page", "medium-page", "small-page"] }
+      - { label: "Hero Title", name: "hero_title", widget: "string" }
+      - { label: "Hero Subtitle", name: "hero_subtitle", widget: "string" }
+      - { label: "CTA Text", name: "cta_text", widget: "string" }
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        field:
+          label: "Feature"
+          name: "feature"
+          widget: "string"
+      - label: "Testimonials"
+        name: "testimonials"
+        widget: "list"
+        field:
+          label: "Testimonial"
+          name: "testimonial"
+          widget: "string"
+      - { label: "Offer", name: "offer", widget: "string" }
+      - label: "FAQ"
+        name: "faq"
+        widget: "list"
         fields:
-          - { label: "Instrukcja", name: "body", widget: "markdown" }
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+
+  - name: landing-list
+    label: Lista landingów
+    folder: content/landing-list
+    create: true
+    slug: landing-list
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
