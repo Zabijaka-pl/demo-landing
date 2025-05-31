@@ -3,7 +3,7 @@ title: "Demo - Strony, które zamieniają ruch na klientów"
 template: "large-page"
 slug: "duza-strona"
 hero_title: "Gdy Twój biznes jest w Google – ale klient nie może kupić"
-hero_subtitle: "Większość stron jest „dla obecności". Tworzę takie, które zamieniają ruch na klientów: od razu, bez telefonów, automatycznie. I daję Ci możliwość samodzielnego zarządzania wszystkim."
+hero_subtitle: "Większość stron jest „dla obecności\". Tworzę takie, które zamieniają ruch na klientów: od razu, bez telefonów, automatycznie. I daję Ci możliwość samodzielnego zarządzania wszystkim."
 cta_text: "🧹 Pokaż, jak to zadziała u Ciebie"
 features:
   - "Tworzę 3 strony pod Twój biznes"
