@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Lista landingów</title>
-  <!-- Додайте ваші стилі тут -->
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 10px; }
+    a { text-decoration: none; color: #007acc; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
   <h1>Lista landingów</h1>
   <ul>
-    {{#each site.pages}}
-      {{#if (startsWith this.filePath "content/landing-pages/")}}
-        <li><a href="{{ this.url }}">{{ this.data.title }}</a></li>
-      {{/if}}
-    {{/each}}
+    {% for page in site.pages %}
+      {% if page.filePath startswith "content/landing-pages/" %}
+        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+      {% endif %}
+    {% endfor %}
   </ul>
 </body>
 </html>
