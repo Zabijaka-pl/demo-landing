@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista landingów</title>
+  <!-- Додайте ваші стилі тут -->
+</head>
+<body>
+  <h1>Lista landingów</h1>
+  <ul>
+    {{#each site.pages}}
+      {{#if (startsWith this.filePath "content/landing-pages/")}}
+        <li><a href="{{ this.url }}">{{ this.data.title }}</a></li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</body>
+</html>
