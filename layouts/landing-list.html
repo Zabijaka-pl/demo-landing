@@ -12,13 +12,13 @@
   </style>
 </head>
 <body>
+ {{ define "main" }}
   <h1>Lista landingów</h1>
   <ul>
-    {% for page in site.pages %}
-      {% if page.filePath startswith "content/landing-pages/" %}
-        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-      {% endif %}
-    {% endfor %}
+    {{ range where .Site.Pages "Section" "landing-pages" }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
   </ul>
+{{ end }}
 </body>
 </html>

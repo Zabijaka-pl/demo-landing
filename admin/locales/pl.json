@@ -1,0 +1,69 @@
+{
+  "app": {
+    "header": {
+      "title": "Netlify CMS",
+      "login": "Zaloguj się",
+      "logout": "Wyloguj się",
+      "errorMissingRequiredField": "Brak wymaganego pola"
+    },
+    "collection": {
+      "sidebar": {
+        "collections": "Kolekcje"
+      },
+      "list": {
+        "loadingEntries": "Ładowanie wpisów...",
+        "noEntries": "Brak wpisów",
+        "search": "Szukaj"
+      }
+    },
+    "editor": {
+      "editorControlPane": {
+        "widget": {
+          "required": "To pole jest wymagane.",
+          "regexPattern": "Wzorzec nie pasuje.",
+          "min": "Wartość jest za mała.",
+          "max": "Wartość jest za duża."
+        },
+        "entry": {
+          "publish": "Opublikuj",
+          "publishAndCreateNew": "Opublikuj i utwórz nowy",
+          "delete": "Usuń",
+          "publishSuccess": "Wpis opublikowany pomyślnie",
+          "publishFailure": "Błąd podczas publikacji",
+          "deleteSuccess": "Wpis usunięty pomyślnie",
+          "deleteFailure": "Błąd podczas usuwania"
+        }
+      },
+      "editorToolbar": {
+        "markdown": "Markdown",
+        "richText": "Wzbogacony tekst",
+        "preview": "Podgląd"
+      }
+    },
+    "mediaLibrary": {
+      "mediaLibrary": "Biblioteka mediów",
+      "insertMedia": "Wstaw media",
+      "loading": "Ładowanie...",
+      "noResults": "Brak wyników",
+      "image": "Obraz",
+      "file": "Plik",
+      "uploading": "Wysyłanie...",
+      "uploadFailed": "Wysyłanie nie powiodło się"
+    },
+    "ui": {
+      "errorBoundary": {
+        "title": "Coś poszło nie tak.",
+        "details": "Wystąpił błąd. Spróbuj odświeżyć stronę.",
+        "reportIt": "Zgłoś problem"
+      },
+      "settingsDropdown": {
+        "logOut": "Wyloguj się",
+        "profile": "Profil"
+      },
+      "toast": {
+        "copy": "Skopiowano do schowka",
+        "copyError": "Błąd kopiowania"
+      }
+    }
+  }
+}

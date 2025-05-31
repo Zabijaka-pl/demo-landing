@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/instrukcja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/instrukcja/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/landing-list/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/landing-list/example/</guid>
+      <description>&lt;p&gt;title: &amp;ldquo;Приклад лендінгу&amp;rdquo;&#xA;date: 2025-05-31&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Demo - Strony, które zamieniają ruch na klientów</title>
+      <link>http://localhost:1313/landing-pages/duza-strona/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/landing-pages/duza-strona/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lista landingów</title>
+      <link>http://localhost:1313/landing-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/landing-list/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mała Strona</title>
+      <link>http://localhost:1313/landing-pages/mala-strona/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/landing-pages/mala-strona/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Średnia Strona</title>
+      <link>http://localhost:1313/landing-pages/srednia-strona/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/landing-pages/srednia-strona/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
