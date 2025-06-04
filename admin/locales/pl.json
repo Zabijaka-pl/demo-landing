@@ -4,7 +4,16 @@
       "title": "Netlify CMS",
       "login": "Zaloguj się",
       "logout": "Wyloguj się",
-      "errorMissingRequiredField": "Brak wymaganego pola"
+      "errorMissingRequiredField": "Brak wymaganego pola",
+      "content": "Treść",
+      "media": "Multimedia"
+    },
+    "buttons": {
+      "create": "Utwórz",
+      "delete": "Usuń",
+      "edit": "Edytuj",
+      "publish": "Opublikuj",
+      "save": "Zapisz"
     },
     "collection": {
       "sidebar": {
@@ -14,6 +23,11 @@
         "loadingEntries": "Ładowanie wpisów...",
         "noEntries": "Brak wpisów",
         "search": "Szukaj"
+      },
+      "collections": {
+        "landing-pages": "Strony docelowe",
+        "landing-list": "Lista landingów",
+        "links": "Ustawienia strony"
       }
     },
     "editor": {
@@ -37,7 +51,11 @@
       "editorToolbar": {
         "markdown": "Markdown",
         "richText": "Wzbogacony tekst",
-        "preview": "Podgląd"
+        "preview": "Podgląd",
+        "publish": "Opublikuj",
+        "save": "Zapisz",
+        "deleteEntry": "Usuń",
+        "createNew": "Nowy wpis"
       }
     },
     "mediaLibrary": {

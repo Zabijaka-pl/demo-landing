@@ -5,11 +5,29 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 
+locales:
+  default: pl
+  pl:
+    buttons:
+      create: "Utwórz"
+      delete: "Usuń"
+      edit: "Edytuj"
+      publish: "Opublikuj"
+      save: "Zapisz"
+    collections:
+      landing-pages: "Strony docelowe"
+      landing-list: "Lista landingów"
+      links: "Ustawienia strony"
+    menu:
+      media: "Multimedia"
+      contents: "Treść"
+
 collections:
   - name: landing-pages
-    label: Landing Pages
-    folder: content/landing-pages
+    label: Strony docelowe
+    label_singular: Strona
     create: true
+    folder: content/landing-pages
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -49,7 +67,7 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
 
   - name: links
-    label: Список посилань
+    label: Ustawienia strony
     files:
       - file: "public/links.html"
         label: links.html
