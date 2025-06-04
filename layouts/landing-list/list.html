@@ -10,7 +10,7 @@
   <main>
     <h1>{{ .Title }}</h1>
     <ul>
-      {{ range where .Site.RegularPages "Section" "landing-list" }}
+      {{ range where .Site.RegularPages "Section" "landing-pages" }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
