@@ -1,0 +1,35 @@
+{{ if .Params.countdown.end }}
+<section id="countdown-section" class="countdown">
+  <div class="container">
+    {{ with .Params.countdown.pre_text }}<p>{{ . }}</p>{{ end }}
+    <div id="countdown-timer"></div>
+    {{ with .Params.countdown.post_text }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+<script>
+(function(){
+  var end = new Date("{{ .Params.countdown.end }}").getTime();
+  var action = "{{ .Params.countdown.action }}";
+  var timerEl = document.getElementById('countdown-timer');
+  function update(){
+    var now = new Date().getTime();
+    var dist = end - now;
+    if(dist <= 0){
+      clearInterval(intv);
+      if(action === 'hide'){
+        document.getElementById('countdown-section').style.display='none';
+      } else if(action === 'redirect') {
+        window.location.href = '/';
+      }
+      return;
+    }
+    var d = Math.floor(dist/86400000);
+    var h = Math.floor((dist%86400000)/3600000);
+    var m = Math.floor((dist%3600000)/60000);
+    var s = Math.floor((dist%60000)/1000);
+    timerEl.innerHTML = d+"d "+h+"h "+m+"m "+s+"s";
+  }
+  var intv = setInterval(update,1000);update();
+})();
+</script>
+{{ end }}
