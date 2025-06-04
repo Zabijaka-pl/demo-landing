@@ -9,7 +9,7 @@ locales:
   default: pl
   pl:
     buttons:
-      create: "Utwórz"
+      create: "Dodaj stronę z szablonu"
       delete: "Usuń"
       edit: "Edytuj"
       publish: "Opublikuj"
@@ -21,6 +21,15 @@ locales:
     menu:
       media: "Multimedia"
       contents: "Treść"
+    header:
+      quickAdd: "Szybkie dodanie"
+    collection:
+      sidebar:
+        collections: "Zbiory"
+        searchAll: "Szukaj"
+      collectionTop:
+        sortBy: "Sortuj według"
+        newButton: "Nowa strona"
 
 collections:
   - name: landing-pages
