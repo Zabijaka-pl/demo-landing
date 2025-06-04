@@ -17,6 +17,10 @@ collections:
       - { label: "Hero Title", name: "hero_title", widget: "string" }
       - { label: "Hero Subtitle", name: "hero_subtitle", widget: "string" }
       - { label: "CTA Text", name: "cta_text", widget: "string" }
+      - { label: "Is Copy", name: "is_copy", widget: "boolean", default: false }
+      - label: "Popup HTML"
+        name: "popup_html"
+        widget: "code"
       - label: "Features"
         name: "features"
         widget: "list"
@@ -38,6 +42,18 @@ collections:
         fields:
           - { label: "Question", name: "question", widget: "string" }
           - { label: "Answer", name: "answer", widget: "text" }
+      - label: "Countdown"
+        name: "countdown"
+        widget: "object"
+        fields:
+          - { label: "End Date", name: "end", widget: "datetime", required: false }
+          - { label: "Text Before", name: "pre_text", widget: "string", required: false }
+          - { label: "Text After", name: "post_text", widget: "string", required: false }
+          - label: "Action After"
+            name: "action"
+            widget: "select"
+            required: false
+            options: ["none", "hide", "redirect"]
 
   - name: landing-list
     label: Lista landingów
@@ -58,3 +74,14 @@ collections:
           - label: "HTML вміст"
             name: body
             widget: "text"
+
+  - name: site-settings
+    label: "Site Settings"
+    files:
+      - file: "data/site_settings.yml"
+        label: "General"
+        name: "general"
+        fields:
+          - { label: "Head Code", name: "head_code", widget: "code", required: false }
+          - { label: "Body Code", name: "body_code", widget: "code", required: false }
+          - { label: "Favicon", name: "favicon", widget: "image", required: false }

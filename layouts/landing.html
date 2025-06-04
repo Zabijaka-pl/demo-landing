@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }}</title>
+  {{ with site.Data.site_settings.favicon }}<link rel="icon" href="{{ . }}">{{ end }}
+  {{ with site.Data.site_settings.head_code }}{{ . | safeHTML }}{{ end }}
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
+  {{ if .Params.is_copy }}
+  <div class="copy-warning" style="background:#ffc;margin:0;padding:10px;text-align:center;">Edytujesz kopię strony</div>
+  {{ end }}
   {{ $base := printf "%s-page/" .Params.template }}
   {{ partial (print $base "hero.html") . }}
   {{ partial (print $base "utp.html") . }}
@@ -15,8 +20,10 @@
   {{ partial (print $base "features.html") . }}
   {{ partial (print $base "offer.html") . }}
   {{ partial (print $base "faq.html") . }}
+  {{ partial (print $base "countdown.html") . }}
   {{ partial (print $base "cta.html") . }}
   {{ partial (print $base "modal.html") . }}
   <script src="/assets/js/scripts.js"></script>
+  {{ with site.Data.site_settings.body_code }}{{ . | safeHTML }}{{ end }}
 </body>
 </html>
