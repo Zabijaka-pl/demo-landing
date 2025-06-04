@@ -17,12 +17,16 @@
     },
     "collection": {
       "sidebar": {
-        "collections": "Kolekcje"
+        "collections": "Zbiory",
+        "searchAll": "Szukaj"
       },
       "list": {
         "loadingEntries": "Ładowanie wpisów...",
         "noEntries": "Brak wpisów",
-        "search": "Szukaj"
+        "search": "Szukaj",
+        "sortBy": "Sortuj według",
+        "newEntry": "Nowa strona",
+        "quickAdd": "Szybkie dodanie"
       },
       "collections": {
         "landing-pages": "Strony docelowe",
