@@ -1,6 +1,6 @@
 ---
 slug: duza-strona
-title: Demo2 - Strony, które zamieniają ruch na klientów
+title: Strony, które zamieniają ruch na klientów
 template: large-page
 hero_title: Gdy Twój biznes jest w Google – ale klient nie może kupić
 hero_subtitle: 'Większość stron jest „dla obecności". Tworzę takie, które
