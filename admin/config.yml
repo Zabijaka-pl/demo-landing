@@ -7,26 +7,14 @@ public_folder: "/images"
 
 locales:
   default: pl
-  pl:
-    buttons:
-      create: "Utwórz"
-      delete: "Usuń"
-      edit: "Edytuj"
-      publish: "Opublikuj"
-      save: "Zapisz"
-    collections:
-      landing-pages: "Strony docelowe"
-      landing-list: "Lista landingów"
-      links: "Ustawienia strony"
-    menu:
-      media: "Multimedia"
-      contents: "Treść"
+  pl: /admin/locales/pl.json
 
 collections:
   - name: landing-pages
     label: Strony docelowe
     label_singular: Strona
-    create: true
+    create: false
+    delete: false
     folder: content/landing-pages
     slug: "{{slug}}"
     fields:
