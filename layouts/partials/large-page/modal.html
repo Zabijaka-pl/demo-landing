@@ -1,10 +1,12 @@
 <div id="popup" class="popup-overlay">
   <div class="popup-content">
-    <div class="popup-header">
+    <a href="#" class="popup-close">&times;</a>
+    {{ with .Params.popup_html }}
+      {{ . | safeHTML }}
+    {{ else }}
       <h3>🎯 Świetnie!</h3>
-      <a href="#" class="popup-close">&times;</a>
-    </div>
-    <p>Z tego miejsca trafiasz do lejka jednym kliknięciem!</p>
-    <button class="demo-button-inactive" disabled>Demo</button>
+      <p>Z tego miejsca trafiasz do lejka jednym kliknięciem!</p>
+      <button class="demo-button-inactive" disabled>Demo</button>
+    {{ end }}
   </div>
 </div>
